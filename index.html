@@ -46,6 +46,7 @@
       border-radius: 8px;
       box-shadow: 0 4px 6px rgba(0,0,0,0.15);
       transition: background-color 0.3s ease;
+      text-align: center;
     }
     a.invite-link:hover {
       background-color: #5b6eae;
@@ -78,31 +79,24 @@
     .commands p strong {
       color: #34495e;
     }
-    /* Новый стиль для блока с ToS и Privacy */
-    .footer-links {
+    .footer-buttons {
       text-align: center;
       margin-top: 40px;
-      font-size: 1em;
-      color: #222;
-      background: white;
-      padding: 15px 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    .footer-buttons a {
       display: inline-block;
-      width: fit-content;
-      min-width: 280px;
-    }
-    .footer-links a {
-      color: #2c3e50;
-      font-weight: 700;
-      margin: 0 18px;
+      background-color: #7289da;
+      color: white;
+      font-weight: bold;
+      padding: 12px 25px;
+      margin: 0 12px;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.15);
       text-decoration: none;
-      font-size: 1.05em;
-      transition: color 0.3s ease;
+      transition: background-color 0.3s ease;
     }
-    .footer-links a:hover {
-      color: #7289da;
-      text-decoration: underline;
+    .footer-buttons a:hover {
+      background-color: #5b6eae;
     }
   </style>
 </head>
@@ -155,13 +149,15 @@
     <p><strong>!оигроке [@упоминание]</strong> — показывает информацию о игроке если есть</p>
   </div>
 
-  <div class="footer-links" role="contentinfo" aria-label="Ссылки на условия использования и политику конфиденциальности">
-    <a href="tos.html">Terms of Service (ToS)</a>
-    <a href="privacy.html">Privacy Policy</a>
+  <div class="footer-buttons" role="contentinfo" aria-label="Ссылки на условия использования, политику конфиденциальности и сервер поддержки">
+    <a href="tos.html" target="_blank" rel="noopener noreferrer">Terms of Service (ToS)</a>
+    <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+    <a href="https://discord.gg/UGQJ7rRfsN" target="_blank" rel="noopener noreferrer">Присоединиться к серверу</a>
   </div>
 
 </body>
 </html>
+
 
 
 
