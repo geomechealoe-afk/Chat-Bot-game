@@ -46,6 +46,24 @@
       box-shadow: 0 3px 7px rgb(0 0 0 / 0.1);
       margin-bottom: 25px;
     }
+
+    a.invite-link {
+      display: block;
+      width: max-content;
+      margin: 15px auto;
+      background-color: #7289da;
+      color: white;
+      font-weight: bold;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+      transition: background-color 0.3s ease;
+      text-align: center;
+    }
+    a.invite-link:hover {
+      background-color: #5b6eae;
+    }
   </style>
 </head>
 <body>
@@ -70,8 +88,11 @@
     <p>Мы не передаем ваши данные третьим лицам и принимаем меры для защиты информации от несанкционированного доступа.</p>
 
     <h2>Контакты</h2>
-    <p>Если у вас есть вопросы по политике конфиденциальности, сообщите о них на нашем Discord-сервере поддержки:<br>
-    <a href="https://discord.gg/UGQJ7rRfsN" target="_blank">Присоединиться к серверу</a></p>
+    <p>Если у вас есть вопросы по политике конфиденциальности, сообщите о них на нашем Discord-сервере поддержки:</p>
+
+    <a class="invite-link" href="https://discord.gg/UGQJ7rRfsN" target="_blank" rel="noopener noreferrer">
+      Присоединиться к серверу
+    </a>
 
     <p>На сервере вы можете:</p>
     <ul>
@@ -84,3 +105,4 @@
   </div>
 </body>
 </html>
+
