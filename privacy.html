@@ -4,12 +4,27 @@
   <meta charset="UTF-8" />
   <title>Privacy Policy — Discord Бот</title>
   <style>
+    /* Анимированный фон с плавным градиентом */
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
     body {
       font-family: Arial, sans-serif;
       max-width: 700px;
       margin: 30px auto;
       padding: 0 20px;
-      background: #f7f7f7;
+      background: linear-gradient(-45deg, #4facfe, #00f2fe, #7289da, #3a86ff);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
       color: #222;
       line-height: 1.6;
     }
@@ -54,17 +69,18 @@
     <h2>Безопасность</h2>
     <p>Мы не передаем ваши данные третьим лицам и принимаем меры для защиты информации от несанкционированного доступа.</p>
 
-<h2>Контакты</h2>
-<p>Если у вас есть вопросы по политике конфиденциальности, сообщите о них на нашем Discord-сервере поддержки:<br>
-<a href="https://discord.gg/ТВОЙ_КОД" target="_blank">Присоединиться к серверу</a></p>
+    <h2>Контакты</h2>
+    <p>Если у вас есть вопросы по политике конфиденциальности, сообщите о них на нашем Discord-сервере поддержки:<br>
+    <a href="https://discord.gg/ТВОЙ_КОД" target="_blank">Присоединиться к серверу</a></p>
 
-<p>На сервере вы можете:</p>
-<ul>
-  <li>задать вопрос в канале поддержки;</li>
-  <li>оставить предложение по улучшению бота;</li>
-  <li>сообщить об ошибках через текстовый форум «Сообщение о багах».</li>
-</ul>
+    <p>На сервере вы можете:</p>
+    <ul>
+      <li>задать вопрос в канале поддержки;</li>
+      <li>оставить предложение по улучшению бота;</li>
+      <li>сообщить об ошибках через текстовый форум «Сообщение о багах».</li>
+    </ul>
 
-<p><a href="index.html">← Вернуться на главную</a></p>
+    <p><a href="index.html">← Вернуться на главную</a></p>
+  </div>
 </body>
 </html>
