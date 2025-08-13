@@ -4,12 +4,27 @@
   <meta charset="UTF-8" />
   <title>Discord Бот — Текстовая стратегия</title>
   <style>
+    /* Анимированный фон с плавным градиентом */
+    @keyframes gradientBG {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
     body {
       font-family: Arial, sans-serif;
       max-width: 700px;
       margin: 30px auto;
       padding: 0 20px;
-      background: #f7f7f7;
+      background: linear-gradient(-45deg, #4facfe, #00f2fe, #7289da, #3a86ff);
+      background-size: 400% 400%;
+      animation: gradientBG 15s ease infinite;
       color: #222;
       line-height: 1.6;
     }
@@ -60,6 +75,22 @@
     }
     .commands p strong {
       color: #34495e;
+    }
+    /* Ссылки ToS и Privacy снизу */
+    .footer-links {
+      text-align: center;
+      font-size: 0.9em;
+      margin-top: 50px;
+      color: #555;
+    }
+    .footer-links a {
+      margin: 0 15px;
+      color: #7289da;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .footer-links a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -112,12 +143,12 @@
     <p><strong>!оигроке [@упоминание]</strong> — показывает информацию о игроке если есть</p>
   </div>
 
-<div class="section" style="text-align:center; font-size: 0.9em; margin-top: 50px; color: #555;">
-  <a href="tos.html" style="margin-right: 20px; color: #7289da; text-decoration: none;">Terms of Service (ToS)</a>
-  <a href="privacy.html" style="color: #7289da; text-decoration: none;">Privacy Policy</a>
-</div>
-
+  <div class="footer-links">
+    <a href="tos.html">Terms of Service (ToS)</a>
+    <a href="privacy.html">Privacy Policy</a>
+  </div>
 </body>
 </html>
+
 
 
